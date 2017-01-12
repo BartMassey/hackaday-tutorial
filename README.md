@@ -25,7 +25,10 @@ quibbles:
   explicitly such that the center of the slot hits the
   center of the hole. I fixed this in my version.
 
-* The construction of the fillet in the 
+* The construction of the fillet between the washer and foot
+  part of the base should really be explicit in the sketch,
+  given that it is fairly explicit in the book drawing. I
+  tried to reproduce it accurately.
 
 * It is not obvious from the book drawing how the top of the
   flange piece should be shaped. I followed the tutorial's
@@ -36,3 +39,4 @@ quibbles:
   that this can be fixed in FreeCAD with judicious use of
   face sketches and imported edges, although this is also
   fiddly and error-prone in FreeCAD.
+
