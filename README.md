@@ -1,7 +1,8 @@
 # Thing
+Copyright (c) 2017 Bart Massey
 
-This 3D "thing" is a FreeCAD 0.16R model of a part produced
-by following along with a
+This 3D "thing" is a FreeCAD 0.16R part model produced by
+following a
 [Hackaday 3D Printering Tutorial](http://hackaday.com/2014/02/05/3d-printering-making-a-thing-in-freecad-part-i/). The
 part itself is from the book *A Manual of Engineering
 Drawing for Students and Draftsmen* by Thomas Ewing
@@ -17,9 +18,9 @@ quibbles:
 * It would have been nice to have the book drawing enlarged
   and cleaned up so that it was more readable.
 
-* Apparently Freecad 0.12 had trouble with units. I followed
-  the book drawing and used inches for everything. Seemed to
-  work fine.
+* Apparently Freecad 0.12 had trouble with units. With 0.16R
+  I followed the book drawing and used inches for
+  everything. Seemed to work fine.
 
 * The construction of the slot in the base should really be
   explicitly such that the center of the slot hits the
@@ -31,12 +32,28 @@ quibbles:
   tried to reproduce it accurately.
 
 * It is not obvious from the book drawing how the top of the
-  flange piece should be shaped. I followed the tutorial's
-  suggestion here, but there seem to be many possibilities.
+  flange piece should be shaped. After staring at it for a
+  long time, I diverged from the drawing and made the sides
+  of the flange vertical instead of sloped. To change this,
+  remove the vertical constraint in the flange sketch and
+  figure out how high you want the top of the flange to be.
 
-* The process of hand-calculating how the base and flange
-  piece fit together is tedious and error-prone. I suspect
-  that this can be fixed in FreeCAD with judicious use of
-  face sketches and imported edges, although this is also
-  fiddly and error-prone in FreeCAD.
+* The tutorial handwaves some idea of making the base and
+  flange pieces fit together by doing some math and
+  adjusting sketch positions manually. I did this first, but
+  didn't like it. I instead chose to go through the
+  sometimes-painful process of making sure sketches were
+  attached to appropriate faces and appropriate geometry was
+  borrowed: as a result, things are more reliable and
+  configurable.
 
+I've included STL exported from the model, just for fun.
+
+Anyway, have fun taking this apart, printing it,
+whatever. Thanks again to the tutorial authors for an
+interesting afternoon.
+
+---
+
+This work is licensed under the "MIT License". Please see
+the file COPYING in this distribution for license terms.
